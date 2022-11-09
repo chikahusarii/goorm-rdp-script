@@ -43,7 +43,7 @@ class CRD:
         subprocess.run(["wget", "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"], stdout=subprocess.PIPE)
         subprocess.run(["dpkg", "--install", "google-chrome-stable_current_amd64.deb"], stdout=subprocess.PIPE)
         subprocess.run(['apt', 'install', '--assume-yes', '--fix-broken'], stdout=subprocess.PIPE)
-        os.system("wget https://dl1.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTUzMDc3NDYwMCwidSI6bnVsbCwibHQiOiJkb3dubG9hZCIsInMiOiIzM2ExNWQ3YWU0MTNhMTE2ZWJlY2E4YzZmOWFmYjhkNTE0Y2NmMmU0Y2U3ZTUzZDUyOWU0NDQ5YjY1N2Y3YmQ3MjMxNTIwZDRlZGE5ZjhiMWRmYjZiOTQ2Y2ZiNzU0OGJiODFhYjcxNTZhYTZiYWQ4M2UwYjA2MmEyMTY3NzcyNCIsInQiOjE2NDU1MTM0OTcsInN0ZnAiOiIyNGFhYWZiMWVhZmU2ZjU1YzUwMTI3ZmViMGJmOTdkNCIsInN0aXAiOiIzNS4xNTQuMTY2LjE1NSJ9.pfHVPOG-fhRwKRsVdNWiyaoepEIsw-3wqAosQcbwAE4/ocs-url_3.1.0-0ubuntu1_amd64.deb")
+        os.system("wget https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1467909105/ocs-url_3.1.0-0ubuntu1_amd64.deb?response-content-disposition=attachment%3B%2520ocs-url_3.1.0-0ubuntu1_amd64.deb&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20221109%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221109T174615Z&X-Amz-SignedHeaders=host&X-Amz-Expires=60&X-Amz-Signature=5800eaa18fb36fd2fde6354a410db0d5592a085f0a4113ff466b2ef1ee561d1b")
         os.system("dpkg -i ocs-url_3.1.0-0ubuntu1_amd64.deb")
         os.system("sudo apt install -f -y")
 
